@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8.0.999-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChatWindowController">
+   <children>
+      <TextArea fx:id="displayedMessages" editable="false" layoutX="134.0" layoutY="14.0" prefHeight="334.0" prefWidth="472.0" />
+      <TextField fx:id="inputText" layoutX="134.0" layoutY="361.0" onAction="#onEnter" prefHeight="25.0" prefWidth="472.0" />
+      <Button fx:id="sendButton" layoutX="616.0" layoutY="361.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="25.0" prefWidth="103.0" text="Send" />
+      <TextArea fx:id="userlist" editable="false" layoutX="616.0" layoutY="14.0" prefHeight="334.0" prefWidth="103.0" />
+      <TreeView fx:id="roomView" layoutX="14.0" layoutY="14.0" prefHeight="274.0" prefWidth="110.0" />
+      <Button fx:id="joinRoomButton" layoutX="14.0" layoutY="295.0" mnemonicParsing="false" onAction="#joinRoomClick" prefHeight="25.0" prefWidth="110.0" text="Join Room" />
+      <Button fx:id="quitRoomButton" layoutX="13.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="110.0" text="Quit Room" onAction="#quitRoomClick"/>
+      <Label fx:id="usernameLabel" layoutX="15.0" layoutY="365.0" prefHeight="17.0" prefWidth="110.0" />
+   </children>
+</AnchorPane>
