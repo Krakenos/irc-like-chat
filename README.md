@@ -1,2 +1,2 @@
 # irc-like-chat
-Basic chat client and server
+Basic chat client and server. Communication between client and server is done via socket. Server supports creating multiple rooms(each room having seperate thread) in which multiple users can communicate with each other, similar to IRC(but way more barebones). Chat client has basic javafx ui. Javadoc is written in Polish due to the fact project was made as an assignment(I'm sorry).
